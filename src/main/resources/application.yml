@@ -12,12 +12,12 @@ spring:
 #    host: 10.225.27.237
 #    port: 7777
 #    password: admin
-    host: 192.168.99.100
+    host: 127.0.0.1
     port: 6379
   datasource:
     url: jdbc:mysql://localhost:3306/seckill?useSSL=false
-    username: seckill
-    password: seckill
+    username: root
+    password: root
     driver-class-name: com.mysql.jdbc.Driver
 #  http:
 #    encoding:

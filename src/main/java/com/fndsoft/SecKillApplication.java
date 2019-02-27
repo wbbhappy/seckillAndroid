@@ -4,6 +4,7 @@ import com.fndsoft.pool.BackendUpdateNumberTask;
 import com.fndsoft.pool.ExecutorPool;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -19,6 +20,7 @@ import java.util.Arrays;
  */
 @SpringBootApplication
 @ComponentScan("com.fndsoft")
+@SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
 public class SecKillApplication {
 
     public static void main(String[] args) throws Exception {
